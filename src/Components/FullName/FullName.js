@@ -16,6 +16,8 @@ const FullName = () => {
         } else{
             const fullName = ` ${firstName} ${lastName}`; 
             setFullName(fullName);
+            setFirstName('');
+            setLastName('');
         }
     };
 
