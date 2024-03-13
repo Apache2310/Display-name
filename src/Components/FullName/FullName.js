@@ -8,14 +8,11 @@ const FullName = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // const regex = /^[a-zA-Z\s]*$/;
-        if(!firstName.trim( ) || !lastName.trim()) {
-            alert("Please fill the mandatory fields.");
-        // }else if(!regex.test(firstName) || !regex.test(lastName)){
-        //     alert("Invalid entry! Please enter only letters and spaces.")
-        } else{
-            const fullName = ` ${firstName} ${lastName}`; 
+        if(firstName && lastName){
+            const fullName = `${firstName} ${lastName}`;
             setFullName(fullName);
+        }else{
+            alert("Please fill the mandatory fields");
         }
     };
 
