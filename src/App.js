@@ -1,10 +1,10 @@
 import './App.css';
-import FullName from './Components/FullName/FullName';
+import NameForm from './Components/FullName/FullName';
 
 function App() {
   return (
     <div className="App">
-      <FullName />
+      <NameForm />
     </div>
   );
 }
